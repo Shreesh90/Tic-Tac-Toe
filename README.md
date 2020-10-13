@@ -4,7 +4,7 @@
 The program consists of a TicTacToeServer application that allows two
 TicTacToeClient application to connect to the server and play Tic-Tac-Toe.
 
-## TicTacToeServer Class:
+## TicTacToe Server Class:
 As the TicTacToeServer receives each client connection, it creates an instance
 of innerclass Player to process the client in a separate thread. These threads
 enable the clients to play the game independently. The first client to connect to
@@ -12,7 +12,7 @@ the server is player X and the second is player O. Player X makes the first move
 The server maintains the information about the board so it can determine if a
 player’s move is valid.
 
-## TicTacToeClient Class :
+## TicTacToe Client Class :
 Each TicTacToeClient application maintains its own GUI version of the Tic-Tac-
 Toe board on which it displays the state of the game. The clients can place a
 mark only in an empty square. Inner class Square implements each of the nine
